@@ -1,0 +1,16 @@
+uninstall database connect
+uninstall Migrations 1
+database connect
+Migrations 1
+installed in 0.19649195671082 seconds
+uninstall database connect
+uninstall Migrations 1
+database connect
+Migrations 1
+installed in 0.13890218734741 seconds
+database connect
+Migrations 1
+installed in 0.094169139862061 seconds
+database connect
+Migrations 1
+installed in 1.38490891457 seconds

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<jtlshopplugin>
+    <Name>TecseeCalendar</Name>
+    <Description>TecseeCalendar is a jtl plugin which is used to create an event's Calendar system</Description>
+    <Author>Tecsee</Author>
+    <URL>https://tecsee.de/</URL>
+    <PluginID>TecseeCalendar</PluginID>
+    <XMLVersion>100</XMLVersion>
+    <ShopVersion>5.0.0</ShopVersion>
+    <Version>1.0.0</Version>
+    <CreateDate>2021-09-23</CreateDate>
+    <Install>
+        <FlushTags>CACHING_GROUP_CATEGORY, CACHING_GROUP_ARTICLE</FlushTags>
+        <Adminmenu>
+            <Customlink sort="1">
+                <Name>Add_Event</Name>
+            </Customlink>
+            <Customlink sort="2">
+            <Name>All_Event</Name>
+            </Customlink>
+            <Customlink sort="3">
+                <Name>Translate_Massages</Name>
+            </Customlink>
+            <Customlink sort="4">
+                <Name>Reservations_Details</Name>
+            </Customlink>
+        </Adminmenu>
+        <FrontendLink>
+            <Link>
+                <Name>calendar</Name>
+                <Template>calendar.tpl</Template>
+                <VisibleAfterLogin>Y</VisibleAfterLogin>
+                <LinkLanguage iso="GER">
+                    <Seo>Kalender</Seo>
+                    <Name>Kalender</Name>
+                    <Title>Kalender</Title>
+                    <MetaTitle>Kalender</MetaTitle>
+                    <MetaKeywords>Kalender</MetaKeywords>
+                    <MetaDescription>Kalender</MetaDescription>
+                </LinkLanguage>
+                <LinkLanguage iso="ENG">
+                    <Seo>Calendar</Seo>
+                    <Name>Calendar</Name>
+                    <Title>Calendar</Title>
+                    <MetaTitle>Calendar</MetaTitle>
+                    <MetaKeywords>Calendar</MetaKeywords>
+                    <MetaDescription>Calendar</MetaDescription>
+                </LinkLanguage>
+            </Link>
+            <Link>
+                <Name>TecseeCalendar</Name>
+                <Template>my-calendar.tpl</Template>
+                <VisibleAfterLogin>Y</VisibleAfterLogin>
+                <LinkLanguage iso="GER">
+                    <Seo>mein-kalender</Seo>
+                    <Name>mein-kalender</Name>
+                    <Title>Mein Kalender</Title>
+                    <MetaTitle>Mein Kalender</MetaTitle>
+                    <MetaKeywords>Mein-Kalender</MetaKeywords>
+                    <MetaDescription>Mein-Kalender</MetaDescription>
+                </LinkLanguage>
+                <LinkLanguage iso="ENG">
+                    <Seo>my-calendar</Seo>
+                    <Name>my-calendar</Name>
+                    <Title>My Calendar</Title>
+                    <MetaTitle>My Calendar</MetaTitle>
+                    <MetaKeywords>My-Calendar</MetaKeywords>
+                    <MetaDescription>My-Calendar</MetaDescription>
+                </LinkLanguage>
+            </Link>
+        </FrontendLink>
+        <CSS>
+            <file>
+                <name>plugin.css</name>
+                <priority>1</priority>
+            </file>
+        </CSS>
+        <JS>
+            <file>
+                <name>axios.js</name>
+                <priority>1</priority>
+                <position>body</position>
+            </file>
+            <file>
+                <name>my-calender.js</name>
+                <priority>1</priority>
+                <position>body</position>
+            </file>
+            <file>
+                <name>Gift.js</name>
+                <priority>1</priority>
+                <position>body</position>
+            </file>
+            <file>
+                <name>HttpRequest.js</name>
+                <priority>1</priority>
+                <position>body</position>
+            </file>
+            <file>
+                <name>main.js</name>
+                <priority>1</priority>
+                <position>body</position>
+            </file>
+        </JS>
+    </Install>
+</jtlshopplugin>
